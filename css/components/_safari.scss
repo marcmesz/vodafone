@@ -1,0 +1,26 @@
+@media not all and (min-resolution:.001dpcm) { 
+    @supports (-webkit-appearance: none) {
+        .event-item div+div{
+            margin-left: 4em;
+        }
+
+        select{
+            overflow: hidden;
+            border: none;
+            background-color: $light;
+            padding: 11px !important;
+            border: 0;
+            border-radius: 0;
+            -webkit-appearance: none;
+        }
+
+        @media (max-width: 840px){
+            .nav-items li + li{
+                margin-top: 2.7em !important;
+            }
+            .event-item div+div{
+                margin-left: 0;
+            }
+        }
+    }
+  }

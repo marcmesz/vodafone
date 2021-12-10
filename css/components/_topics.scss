@@ -1,0 +1,137 @@
+#topics{
+    color: $light;
+    background-size: cover;
+    background-position: top;
+    background-image: url("../img/section-bg--grey.jpg");
+}
+
+#topics h2{
+    @include clean-h2-left;
+    margin-top: .3em;
+}
+
+#topics h3{
+    @include clean-h3-left;
+}
+
+#topics p + p{
+    margin-bottom: 0;
+}
+
+.panel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+.panel-bar{
+    background-color: $darkGreyColor;
+    padding: 0 1em;
+}
+
+.panel-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.panel-list h5{
+    text-align: center !important;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: $light;
+}
+
+.panel-icon{
+    width: 27px;
+    height: 10px;
+    transition: transform 500ms;
+}
+
+.btn-panel-icon{
+    padding: .2em 0;
+}
+
+.panel{
+    display: flex;
+}
+
+.panel-list a{
+    text-decoration: none;
+}
+
+.open-panel .panel-icon{
+    transform: rotate(180deg);
+}
+
+#hidden-panel{
+    background-color: $light;
+    display: none;
+}
+
+.panel-content{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5em;
+}
+.article{
+    width: 100%;
+}
+
+.panel-sliders{
+    display: none;
+    position: relative;
+}
+
+.panel-left,
+.panel-right{
+    position: absolute;
+    cursor: pointer;
+}
+
+.panel-left{
+    left: 0;
+}
+
+.panel-right{
+    top: 3px;
+    right: -14px;
+    transform: rotate(89deg);
+}
+
+.panel-slider{
+    
+    height: 27px;
+    width: 10px;
+}
+
+.panel-info-bar{
+    @extend .font700;
+    position: absolute;
+    width: 550px;
+    background-color: $darkGreyColor;
+    color: $light;
+    padding: 1em;
+}
+
+.panel-info-title{
+    color: $light;
+    font-size: 16px;
+}
+
+.bar{
+    position: relative;
+}
+
+.panel-close{
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 22px;
+    right: 10px;
+}
+
+.btn-close{
+    cursor: pointer;
+}

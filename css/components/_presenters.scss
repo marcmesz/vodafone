@@ -1,0 +1,73 @@
+#presenters{
+    background-color: $greySectionBackgroundColor;
+}
+
+#presenters p{
+    color: $primaryFontColor;
+}
+
+#presenters h2{
+    @include clean-h2;
+}
+
+#presenters h3{
+    @include clean-h3;
+}
+
+.presenter p{
+    @extend .font400;
+    margin: 0;
+    font-size: 16px;
+}
+
+.presenter h5{
+    margin-top: .7em !important;
+}
+
+.presenter-icon{
+    width: 162px;
+}
+
+.presenters-wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.presenters-navigation{
+    position: absolute;
+    background-color: #ccc;
+    height: 70px;
+    width: 35px;
+    cursor: pointer;
+}
+
+.presenters-navigation img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 10px;
+}
+
+#presenters .right img{
+    left: unset;
+    right: 50%;
+    transform: scaleX(-1) translate(-50%,-50%);
+}
+
+#presenters .left{
+    left: -16px;
+}
+
+#presenters .right{
+    right: -16px;
+}
+
+.presenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

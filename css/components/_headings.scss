@@ -1,0 +1,94 @@
+.font300{ font-weight: 300; }
+.font400{ font-weight: 400; }
+.font700{ font-weight: 700; letter-spacing: -.1px; }
+.centered-text{ text-align: center;}
+.no-margin{ margin: 0 !important; }
+
+h1,h2,h3,h4,h5,h6{
+    @extend .centered-text;
+    margin: .8em 0;
+    padding: 0;
+    color: $primaryFontColor;
+}
+
+h1{ @extend h2;
+    @extend .no-margin;
+    color: $light;
+}
+h2{ @extend .font300; font-size: 32px; }
+h3{
+    @extend .font700; 
+    font-size: 24px;
+    position: relative;
+    margin-bottom: 1.5em;
+    &:before{
+        position: absolute;
+        content: '';
+        left: 50%;
+        transform: translateX(-50%);
+        top:30px;
+        border-bottom: 3px solid $red;
+        width: 80px;
+    }
+    &:after{
+        position: absolute;
+        content: '';
+        display: block;
+        top: 33px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0px;
+        height: 0px;
+        border: 8px solid;
+        border-bottom-color: transparent;
+        border-top-color: $red;
+        border-left-color: transparent;
+        border-right-color: transparent;
+    }
+}
+h4{
+    @extend h1;
+    @extend .font700;
+    font-size: 24px;
+    text-align: left;
+}
+
+h5{
+    @extend h1;
+    @extend .font700;
+    font-size: 20px;
+    color: $primaryFontColor;
+}
+
+h6{
+    @extend .no-margin;
+    color: $light;
+    font-size: 14px;
+}
+
+
+
+@mixin clean-h3{
+    @extend .font300;
+    font-size: 28px;
+    &::after, &::before{
+        display: none;
+    }
+    margin-bottom: unset;
+}
+
+@mixin clean-h2{
+    margin-top: unset;
+}
+
+@mixin clean-h3-left{
+    @include clean-h3;
+    color: $light;
+    text-align: left;
+}
+
+@mixin clean-h2-left{
+    @include clean-h2;
+    color: $light;
+    text-align: left;
+}

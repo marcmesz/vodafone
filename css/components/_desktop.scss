@@ -1,0 +1,151 @@
+@media (min-width: 841px){
+    #event .container{
+        max-width: 950px;
+    }
+    .event-item{
+        flex-direction: row;
+        gap: 4em;
+    }
+    .presenters-wrapper{
+        flex-direction: row;
+    }
+    .presenters-navigation{
+        display: none;
+    }
+    .mobile-hidden{
+        display: flex !important;
+    }
+    .panel-list{
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .panel{
+        flex-direction: column;
+        padding-top: 1.8em;
+        padding-bottom: .6em;
+        padding-left: .75em;
+        padding-right: .75em;
+        cursor: pointer;
+        opacity: .3;
+        &:hover,
+        &:focus{
+            opacity: 1;
+        }
+        transition: opacity 350ms;
+    }
+
+    .panel-list:not(:focus-within):not(:hover) {
+        .panel { 
+            opacity: 1;
+        }
+    }
+
+    .open-panel .panel-icon{
+        transform: unset;
+    }
+    #hidden-panel{
+        position: relative;
+    }
+    #hidden-panel h5{
+        text-align: left;
+    }
+
+    .custom .container{
+        padding-top: 0;
+        max-width: 950px;
+    }
+
+    .custom .bar{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .btn-panel-icon{
+        margin-top: .5em;
+    }
+    #register-form label{
+        margin-top: 0;
+    }
+    #register-form{
+        max-width: 790px;
+        gap: 2em;
+        grid-template-areas:
+        'title firstname firstname firstname firstname lastname lastname lastname'
+        'company company company company jobtitle jobtitle jobtitle jobtitle'
+        'mobile mobile mobile mobile email email email email'
+        'guest guest guest guest . . . .'
+        'plus plus plus plus plus plus plus plus'
+        'info info info info info info info info'
+        'checkbox checkbox checkbox checkbox checkbox checkbox checkbox checkbox';
+    }
+    #register-form .label1{
+        grid-area: title;
+    }
+    #register-form .label2{
+        grid-area: firstname;
+    }
+    #register-form .label3{
+        grid-area: lastname;
+    }
+    #register-form .label4{
+        grid-area: company;
+    }
+    #register-form .label5{
+        grid-area: jobtitle;
+    }
+    #register-form .label6{
+        grid-area: mobile;
+    }
+    #register-form .label7{
+        grid-area: email;
+    }
+    #register-form .label8{
+        grid-area: guest;
+    }
+    #register-form .label9div{
+        grid-area: plus;
+        margin-top: 0;
+    }
+    #register-form .label10{
+        grid-area: info;
+    }
+    #register-form .label11{
+        grid-area: checkbox;
+    }
+
+    .plus-one{
+        gap: 2em;
+        grid-template-areas:
+        'plusyour plusyour plusyour plusyour plusyour plusyour'
+        'plustitle plustitle plusfirst plusfirst pluslast pluslast';
+    }
+
+    .labelplus1{
+        grid-area: plustitle;
+    }
+    .labelplus2{
+        grid-area: plusfirst;
+    }
+    .labelplus3{
+        grid-area: pluslast;
+    }
+    .plusyour{
+        grid-area: plusyour;
+        margin-top: 0 !important;
+    }
+    .article{
+        display: block !important;
+    }
+    #hidden-panel .main{
+        padding-top: 3em;
+    }
+    #topics .panel{
+        display: flex !important;
+    }
+
+    .nav-main{
+        height: unset !important;
+    }
+}

@@ -1,0 +1,38 @@
+#event{
+    background-image: url("../img/section-bg--party.jpg");
+    background-size: cover;
+    background-position: center;
+    color: $light;
+}
+
+#event h2{
+    color: $light;
+    margin-top: .3em;
+}
+
+#event p{
+    margin-top: .3em;
+}
+
+.event-item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2em;
+}
+
+.event-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80px;
+}
+
+.icon-outline{
+    align-self: center;
+    position: relative;
+    min-width: 100px;
+    min-height: 100px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.2);
+}

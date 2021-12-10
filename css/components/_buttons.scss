@@ -1,0 +1,31 @@
+.btn{
+    display: inline-block;
+    padding: .5em 2em;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    &:hover{
+        color: $light;
+    }
+}
+.btn-red{
+    background-color: $red;
+    color: $light;
+    &:hover{
+        background-color: rgb(184, 0, 0);
+    }
+}
+
+.btn-form{
+    padding: .5em 3em;
+}
+
+.btn-light{
+    padding: .5em 3.6em;
+    color: $primaryFontColor;
+    background-color: $light;
+    &:hover{
+        color: $primaryFontColor;
+        background-color: $greySectionBackgroundColor;
+    }
+}

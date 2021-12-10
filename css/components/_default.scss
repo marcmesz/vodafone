@@ -1,0 +1,43 @@
+*{box-sizing: border-box;}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    @extend .no-margin;
+    padding: 0;
+}
+
+body, input, select, .btn{
+    font-family: Vodafone;
+}
+
+p { @extend .font300;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 1.1em 0;
+    padding: 0;
+}
+
+a{
+    @extend .font700;
+    color: $light;
+    &:hover{
+        color: $red;
+    }
+}
+
+img{
+    width: 100%;
+}
+
+.mobile-hidden{
+    display: none !important;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5em 1em;
+}
