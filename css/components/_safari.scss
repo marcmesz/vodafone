@@ -24,3 +24,14 @@
         }
     }
   }
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+@supports (gap: 2.7em){
+    .nav-items{
+        gap: 2.7em;
+    }
+    .nav-items li + li{
+        margin-top: 0 !important;
+    }
+}
+}
