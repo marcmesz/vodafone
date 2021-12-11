@@ -35,3 +35,11 @@
     }
 }
 }
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {
+    @supports (gap: 4em){
+        .event-item div+div{
+            margin-left: 0 !important;
+        }
+    }
+}
